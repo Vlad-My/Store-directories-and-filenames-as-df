@@ -1,5 +1,29 @@
 # Store-directories-and-filenames-as-df
-Задача: Собрать все данные из папки data в один датафрэйм и выполнить требуемые операции
+##1) **Задача**
+данные имеют следующую структуру:
+- записываются для каждого пользователя, совершившего покупки, каждый день
+- для каждой даты есть своя папка, внутри неё – папки для каждого пользователя
+- внутри каждой папки есть файл data.csv, где и хранятся данные
+  
+Схематично выглядит так:
+└── data
+   ├── 2020-12-30
+   │  ├── FirstName_LastName1
+   │  │   └── data.csv
+   │  ├── FirstName_LastName2
+   │  │   └── data.csv
+   │  └── FirstName_LastName3
+   │      └── data.csv
+   └── 2020-12-31
+      ├── FirstName_LastName1
+      │   └── data.csv
+      └── FirstName_LastName5
+          └── data.csv
+
+Задача: Собрать все данные из папки **data** в один датафрэйм и выполнить требуемые операции
+
+##2) **Стек**
+   Python,
 os.walk store directories and filenames as df. 
 Work with drop_duplicates( ) and duplicated( ). 
 Merging data from 2 files.
